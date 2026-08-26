@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get a Quote &amp; Contact — Jay Ambe Sofa Modern Interiors Studio</title>
+    <meta
+      name="description"
+      content="Request a personalized furniture quote, order material swatches, or book an appointment at one of our studio showrooms."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page-contact">
+    <!-- NAV -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a class="nav__brand" href="./index.html">Jay Ambe Sofa</a>
+        <nav class="nav__links" id="navLinks">
+          <a href="./index.html">Home</a>
+          <a href="./collection.html">Collection</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html" class="is-active">Contact</a>
+        </nav>
+        <a class="btn btn--dark nav__cta" href="./contact.html">
+          Get a Quote
+          <span class="btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </a>
+        <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="./index.html">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span>Contact</span>
+          </div>
+          <span class="eyebrow">Direct Consultation</span>
+          <h1 class="h1 page-hero__title">Let's Craft Your Space</h1>
+          <p class="lead page-hero__lead">
+            Tell us about your project, request custom dimension pricing, or order free timber and upholstery fabric swatches.
+          </p>
+        </div>
+      </section>
+
+      <!-- FORM & CONTACT INFO -->
+      <section class="section contact-section">
+        <div class="container contact-grid">
+          <!-- FORM -->
+          <div class="contact-form-wrap reveal">
+            <h2 class="h2" style="font-size: 28px; margin-bottom: 8px;">Request a Quote</h2>
+            <p class="muted" style="margin-bottom: 28px;">We respond within 24 business hours with detailed pricing, lead times, and CAD renders.</p>
+
+            <form class="quote-form" id="quoteForm" onsubmit="event.preventDefault(); window.handleQuoteSubmit(this);">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="quoteName">Full Name *</label>
+                  <input type="text" id="quoteName" name="name" required placeholder="Elena Marsh" />
+                </div>
+                <div class="form-group">
+                  <label for="quoteEmail">Email Address *</label>
+                  <input type="email" id="quoteEmail" name="email" required placeholder="elena@example.com" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="quotePhone">Phone Number</label>
+                  <input type="tel" id="quotePhone" name="phone" placeholder="+44 7123 456789" />
+                </div>
+                <div class="form-group">
+                  <label for="quoteProduct">Selected Product / Category</label>
+                  <select id="quoteProduct" name="product">
+                    <option value="General Inquiry">General Collection Inquiry</option>
+                    <option value="Haven Cream Bouclé 3-Seater Sofa">Haven Cream Bouclé 3-Seater Sofa</option>
+                    <option value="Roma Italian Cognac Leather Sofa">Roma Italian Cognac Leather Sofa</option>
+                    <option value="Nova Edge Minimalist Sectional">Nova Edge Minimalist Sectional</option>
+                    <option value="Aura Fluted Walnut Credenza">Aura Fluted Walnut Credenza</option>
+                    <option value="Ironleaf Minimalist Media Buffet">Ironleaf Minimalist Media Buffet</option>
+                    <option value="Kumo Organic Form Lounge Chair">Kumo Organic Form Lounge Chair</option>
+                    <option value="Sora Round Solid Oak Dining Table">Sora Round Solid Oak Dining Table</option>
+                    <option value="Solstice Rattan Hanging Swing Pod">Solstice Rattan Hanging Swing Pod</option>
+                    <option value="Custom Bespoke Order">Custom Bespoke Design</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="quoteRoom">Room / Project Type</label>
+                  <select id="quoteRoom" name="room">
+                    <option value="Living Room">Living Room</option>
+                    <option value="Dining Room">Dining Room</option>
+                    <option value="Bedroom">Bedroom</option>
+                    <option value="Office / Commercial Studio">Office / Commercial Studio</option>
+                    <option value="Entire Home Interior">Entire Home Interior</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="quoteSwatches">Request Free Fabric Swatches?</label>
+                  <select id="quoteSwatches" name="swatches">
+                    <option value="No">No, quote only</option>
+                    <option value="Bouclé & Textured Weaves">Yes — Bouclé &amp; Textured Weaves</option>
+                    <option value="Top-Grain Leathers">Yes — Top-Grain Leathers</option>
+                    <option value="Wood Finish Samples">Yes — Oak &amp; Walnut Wood Samples</option>
+                    <option value="Complete Swatch Box">Yes — Complete Designer Swatch Box</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="quoteMessage">Project Details &amp; Custom Sizing Requirements</label>
+                <textarea id="quoteMessage" name="message" rows="4" placeholder="Mention room dimensions, delivery postcode, or specific timber/fabric finishes..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--dark btn--lg" style="width: 100%; justify-content: center;">
+                Submit Quote Request
+                <span class="btn__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </button>
+            </form>
+
+            <div id="quoteSuccessMessage" style="display:none; margin-top:20px; padding:20px; background:#E8F5E9; border-radius:14px; color:#2E7D32;">
+              <strong>Thank you for your inquiry!</strong> Our interior craftsmanship team has received your details and will send a personalized quote and specification sheet to your email within 24 hours.
+            </div>
+          </div>
+
+          <!-- DIRECT CONTACT & STUDIOS -->
+          <div class="contact-info-wrap reveal">
+            <div class="contact-card">
+              <span class="eyebrow">Reach Us Directly</span>
+              <h3>Studio Headquarters</h3>
+              <p class="muted">Speak with our senior furniture consultants for private viewings, trade accounts, and custom commissions.</p>
+              
+              <ul class="contact-list">
+                <li>
+                  <strong>Email:</strong>
+                  <a href="mailto:hello@jayambesofa.com">hello@jayambesofa.com</a>
+                </li>
+                <li>
+                  <strong>Direct Line:</strong>
+                  <a href="tel:+441234567890">+44 1234 567 890</a>
+                </li>
+                <li>
+                  <strong>Workshop &amp; Factory:</strong>
+                  <span>Jay Ambe Sofa House Craft Studio</span>
+                </li>
+                <li>
+                  <strong>Hours:</strong>
+                  <span>Monday to Saturday: 9:00 AM – 7:00 PM</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-card" style="margin-top:24px;">
+              <span class="eyebrow">Delivery &amp; White Glove Service</span>
+              <h3>Worldwide Logistics</h3>
+              <p class="muted">Every order includes room-of-choice placement, uncrating, full assembly, and packaging recycling.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="section faq-section">
+        <div class="container faq-grid">
+          <div class="reveal">
+            <span class="eyebrow">Frequently Asked Questions</span>
+            <h2 class="h2">Good To Know</h2>
+            <p class="muted">Everything regarding shipping times, trade accounts, and our 5-year structural warranty.</p>
+          </div>
+          <div class="faq reveal" id="faq">
+            <details class="faq__item" open>
+              <summary>How long does a made-to-order piece take?<span class="faq__plus" aria-hidden="true"></span></summary>
+              <p>In-stock items dispatch within 3–5 working days. Custom upholstered sofas and bespoke timber tables take 2–4 weeks from order confirmation.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Do you offer trade discounts for interior designers and architects?<span class="faq__plus" aria-hidden="true"></span></summary>
+              <p>Yes. We work closely with architects and residential designers. Trade accounts receive tiered volume pricing, expedited swatch shipping, and 3D CAD models.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Can I customize fabric with my own material (COM)?<span class="faq__plus" aria-hidden="true"></span></summary>
+              <p>Yes. We accept Customer’s Own Material (COM) across all sofa and chair designs. Our workshop will confirm yardage requirements upon quote request.</p>
+            </details>
+            <details class="faq__item">
+              <summary>What is covered under the 5-year warranty?<span class="faq__plus" aria-hidden="true"></span></summary>
+              <p>Five full years on hardwood frames, mortise-tenon joinery, and structural springs; two years on upholstery fabric weaves and moving mechanisms.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__watermark-wrap">
+        <span class="footer__watermark">JAY AMBE SOFA</span>
+      </div>
+      <div class="container footer__main">
+        <div class="footer__brand-col">
+          <a class="footer__brand-logo" href="./index.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer__logo-icon">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Jay Ambe Sofa</span>
+          </a>
+          <div class="footer__socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener">Fb</a>
+            <span class="sep">/</span>
+            <a href="https://behance.net" target="_blank" rel="noopener">Be</a>
+            <span class="sep">/</span>
+            <a href="https://twitter.com" target="_blank" rel="noopener">X</a>
+            <span class="sep">/</span>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">Ln</a>
+          </div>
+        </div>
+
+        <div class="footer__nav-cols">
+          <div class="footer__nav-col">
+            <a href="./index.html">HOME</a>
+            <a href="./about.html">ABOUT US</a>
+            <a href="./collection.html">COLLECTION</a>
+            <a href="./contact.html">CUSTOM CRAFT</a>
+          </div>
+          <div class="footer__nav-col">
+            <a href="./collection.html?category=sofas">SOFAS</a>
+            <a href="./collection.html?category=tables">DINING</a>
+            <a href="./contact.html">CONTACT</a>
+            <a href="./about.html">SHOWROOMS</a>
+          </div>
+        </div>
+
+        <div class="footer__contact-col">
+          <a class="footer__phone" href="tel:+441234567890">+44 (123) 456-7890</a>
+          <a class="footer__email-pill" href="mailto:hello@jayambesofa.com">[ hello@jayambesofa.com ]</a>
+          <p class="footer__address">
+            Hanzelaan 351, Suite 400,<br />
+            Jay Ambe Sofa House Studio
+          </p>
+        </div>
+      </div>
+
+      <div class="container footer__bottom-center">
+        <span>© <span id="year"></span> <strong>JAY AMBE SOFA</strong> All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
