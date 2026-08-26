@@ -17,14 +17,33 @@
   var burger = document.getElementById("navBurger");
   var links = document.getElementById("navLinks");
   if (burger && links) {
-    burger.addEventListener("click", function () {
-      var open = links.classList.toggle("is-open");
+    var toggleMenu = function (force) {
+      var open = typeof force === "boolean" ? force : !links.classList.contains("is-open");
+      links.classList.toggle("is-open", open);
       burger.setAttribute("aria-expanded", String(open));
+      document.body.classList.toggle("menu-open", open);
+    };
+
+    burger.addEventListener("click", function (e) {
+      e.stopPropagation();
+      toggleMenu();
     });
+
     links.addEventListener("click", function (e) {
       if (e.target.tagName === "A") {
-        links.classList.remove("is-open");
-        burger.setAttribute("aria-expanded", "false");
+        toggleMenu(false);
+      }
+    });
+
+    document.addEventListener("click", function (e) {
+      if (links.classList.contains("is-open") && !links.contains(e.target) && !burger.contains(e.target)) {
+        toggleMenu(false);
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && links.classList.contains("is-open")) {
+        toggleMenu(false);
       }
     });
   }
@@ -87,7 +106,7 @@
     track.innerHTML += track.innerHTML;
   }
 
-  /* TESTIMONIALS SLIDER */
+  /* TESTIMONIALS SLIDER WITH TOUCH SWIPE */
   var sliderTrack = document.getElementById("sliderTrack");
   var dotsWrap = document.getElementById("dots");
   if (sliderTrack && dotsWrap) {
@@ -126,6 +145,36 @@
     var slider = document.getElementById("slider");
     if (slider) {
       slider.addEventListener("mouseenter", function () { clearInterval(timer); });
+      
+      /* Touch swipe gesture support for mobile/tablet */
+      var startX = 0;
+      var currentX = 0;
+      var isSwiping = false;
+
+      slider.addEventListener("touchstart", function (e) {
+        startX = e.touches[0].clientX;
+        isSwiping = true;
+        clearInterval(timer);
+      }, { passive: true });
+
+      slider.addEventListener("touchmove", function (e) {
+        if (!isSwiping) return;
+        currentX = e.touches[0].clientX;
+      }, { passive: true });
+
+      slider.addEventListener("touchend", function () {
+        if (!isSwiping) return;
+        isSwiping = false;
+        var diffX = startX - currentX;
+        if (Math.abs(diffX) > 40 && currentX !== 0) {
+          if (diffX > 0) {
+            go(1); // swipe left -> next
+          } else {
+            go(-1); // swipe right -> prev
+          }
+        }
+        currentX = 0;
+      });
     }
 
     render();
@@ -269,10 +318,10 @@
               '<li><strong>Dimensions:</strong> <span>' + item.dimensions + '</span></li>' +
               '<li><strong>Material:</strong> <span>' + item.material + '</span></li>' +
               '<li><strong>Lead Time:</strong> <span>' + item.leadTime + '</span></li>' +
-              '<li><strong>Warranty:</strong> <span>5-Year Structural Frame Guarantee</span></li>' +
+              '<li><strong>Warranty:</strong> <span>5-Year Structural Frame Guarantee &amp; Service in Surat</span></li>' +
             '</ul>' +
             '<div style="margin-top:auto; display:flex; gap:12px;">' +
-              '<a href="./contact.html?product=' + encodeURIComponent(item.title) + '" class="btn btn--dark btn--lg" style="flex:1; justify-content:center;">Inquire / Get Quote</a>' +
+              '<a href="./contact.html?product=' + encodeURIComponent(item.title) + '" class="btn btn--dark btn--lg" style="flex:1; justify-content:center;">Inquire / Request Best Price</a>' +
             '</div>' +
           '</div>' +
         '</div>';

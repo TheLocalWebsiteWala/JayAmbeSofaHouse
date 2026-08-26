@@ -1,0 +1,6 @@
+# Robots.txt for Jay Ambe Sofa House - Surat, Gujarat
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://jayambesofa.com/sitemap.xml

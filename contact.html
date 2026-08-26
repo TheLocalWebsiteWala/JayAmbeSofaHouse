@@ -3,24 +3,79 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Get a Quote &amp; Contact — Jay Ambe Sofa Modern Interiors Studio</title>
+    <title>Get a Quote &amp; Contact — Jay Ambe Sofa House | Dindoli, Surat, Gujarat</title>
     <meta
       name="description"
-      content="Request a personalized furniture quote, order material swatches, or book an appointment at one of our studio showrooms."
+      content="Request a personalised furniture quote, customized dimensions, fabric swatches, or visit our showroom in Dindoli, Surat, Gujarat."
     />
+    <link rel="canonical" href="https://jayambesofa.com/contact.html" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jayambesofa.com/contact.html" />
+    <meta property="og:title" content="Get a Quote &amp; Contact — Jay Ambe Sofa House | Dindoli, Surat, Gujarat" />
+    <meta property="og:description" content="Connect with our master furniture craftsmen in Surat for custom sofa designs, pricing, and showroom visits." />
+    <meta property="og:image" content="https://jayambesofa.com/img/image.webp" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Get a Quote &amp; Contact — Jay Ambe Sofa House | Dindoli, Surat, Gujarat" />
+    <meta name="twitter:description" content="Connect with our master furniture craftsmen in Surat for custom sofa designs, pricing, and showroom visits." />
+    <meta name="twitter:image" content="https://jayambesofa.com/img/image.webp" />
+
+    <link rel="manifest" href="./site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./img/favicon.png" />
+    <link rel="apple-touch-icon" href="./img/favicon.png" />
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- JSON-LD Breadcrumb & ContactPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jayambesofa.com/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact & Quote",
+              "item": "https://jayambesofa.com/contact.html"
+            }
+          ]
+        },
+        {
+          "@type": "ContactPage",
+          "@id": "https://jayambesofa.com/contact.html#contact",
+          "url": "https://jayambesofa.com/contact.html",
+          "name": "Contact & Request Quote — Jay Ambe Sofa House",
+          "description": "Get in touch with Jay Ambe Sofa House in Dindoli, Surat for bespoke furniture consultations, quotations, and showroom visits."
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="page-contact">
     <!-- NAV -->
     <header class="nav" id="nav">
       <div class="nav__inner">
-        <a class="nav__brand" href="./index.html">Jay Ambe Sofa</a>
+        <a class="nav__brand" href="./index.html" aria-label="Jay Ambe Sofa House Home">
+          <img src="./img/logo.webp" alt="Jay Ambe Sofa House" class="nav__logo" />
+        </a>
         <nav class="nav__links" id="navLinks">
           <a href="./index.html">Home</a>
           <a href="./collection.html">Collection</a>
@@ -53,7 +108,7 @@
           <span class="eyebrow">Direct Consultation</span>
           <h1 class="h1 page-hero__title">Let's Craft Your Space</h1>
           <p class="lead page-hero__lead">
-            Tell us about your project, request custom dimension pricing, or order free timber and upholstery fabric swatches.
+            Tell us about your home project, request custom dimension pricing, or visit our showroom in Dindoli, Surat.
           </p>
         </div>
       </section>
@@ -63,44 +118,35 @@
         <div class="container contact-grid">
           <!-- FORM -->
           <div class="contact-form-wrap reveal">
-            <h2 class="h2" style="font-size: 28px; margin-bottom: 8px;">Request a Quote</h2>
-            <p class="muted" style="margin-bottom: 28px;">We respond within 24 business hours with detailed pricing, lead times, and CAD renders.</p>
+            <h2 class="h2" style="font-size: 28px; margin-bottom: 8px;">Request a Free Quote</h2>
+            <p class="muted" style="margin-bottom: 28px;">We respond promptly with detailed pricing, fabric choices, and custom sizing options.</p>
 
             <form class="quote-form" id="quoteForm" onsubmit="event.preventDefault(); window.handleQuoteSubmit(this);">
               <div class="form-row">
                 <div class="form-group">
                   <label for="quoteName">Full Name *</label>
-                  <input type="text" id="quoteName" name="name" required placeholder="Elena Marsh" />
+                  <input type="text" id="quoteName" name="name" required placeholder="e.g. Rahul Patel" />
                 </div>
                 <div class="form-group">
-                  <label for="quoteEmail">Email Address *</label>
-                  <input type="email" id="quoteEmail" name="email" required placeholder="elena@example.com" />
+                  <label for="quoteEmail">Mobile Number / Email *</label>
+                  <input type="text" id="quoteEmail" name="email" required placeholder="e.g. +91 98765 43210 or email" />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="quotePhone">Phone Number</label>
-                  <input type="tel" id="quotePhone" name="phone" placeholder="+44 7123 456789" />
-                </div>
-                <div class="form-group">
-                  <label for="quoteProduct">Selected Product / Category</label>
+                  <label for="quoteProduct">Selected Product / Requirement</label>
                   <select id="quoteProduct" name="product">
-                    <option value="General Inquiry">General Collection Inquiry</option>
-                    <option value="Haven Cream Bouclé 3-Seater Sofa">Haven Cream Bouclé 3-Seater Sofa</option>
-                    <option value="Roma Italian Cognac Leather Sofa">Roma Italian Cognac Leather Sofa</option>
-                    <option value="Nova Edge Minimalist Sectional">Nova Edge Minimalist Sectional</option>
-                    <option value="Aura Fluted Walnut Credenza">Aura Fluted Walnut Credenza</option>
-                    <option value="Ironleaf Minimalist Media Buffet">Ironleaf Minimalist Media Buffet</option>
-                    <option value="Kumo Organic Form Lounge Chair">Kumo Organic Form Lounge Chair</option>
-                    <option value="Sora Round Solid Oak Dining Table">Sora Round Solid Oak Dining Table</option>
-                    <option value="Solstice Rattan Hanging Swing Pod">Solstice Rattan Hanging Swing Pod</option>
-                    <option value="Custom Bespoke Order">Custom Bespoke Design</option>
+                    <option value="General Inquiry">General Furniture Inquiry</option>
+                    <option value="Custom Living Room Sofa">Custom Living Room Sofa</option>
+                    <option value="L-Shape Sectional Sofa">L-Shape Sectional Sofa</option>
+                    <option value="Recliner / Lounge Chairs">Recliner / Lounge Chairs</option>
+                    <option value="Orthopaedic / Luxury Mattress">Orthopaedic / Luxury Mattress</option>
+                    <option value="Designer Curtains & Drapes">Designer Curtains &amp; Drapes</option>
+                    <option value="Dining Table & Chairs">Dining Table &amp; Chairs</option>
+                    <option value="Complete Home Interior Furnishing">Complete Home Interior Furnishing</option>
                   </select>
                 </div>
-              </div>
-
-              <div class="form-row">
                 <div class="form-group">
                   <label for="quoteRoom">Room / Project Type</label>
                   <select id="quoteRoom" name="room">
@@ -108,24 +154,14 @@
                     <option value="Dining Room">Dining Room</option>
                     <option value="Bedroom">Bedroom</option>
                     <option value="Office / Commercial Studio">Office / Commercial Studio</option>
-                    <option value="Entire Home Interior">Entire Home Interior</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="quoteSwatches">Request Free Fabric Swatches?</label>
-                  <select id="quoteSwatches" name="swatches">
-                    <option value="No">No, quote only</option>
-                    <option value="Bouclé & Textured Weaves">Yes — Bouclé &amp; Textured Weaves</option>
-                    <option value="Top-Grain Leathers">Yes — Top-Grain Leathers</option>
-                    <option value="Wood Finish Samples">Yes — Oak &amp; Walnut Wood Samples</option>
-                    <option value="Complete Swatch Box">Yes — Complete Designer Swatch Box</option>
+                    <option value="Entire Home Interior">Entire Home Interior / Villa</option>
                   </select>
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="quoteMessage">Project Details &amp; Custom Sizing Requirements</label>
-                <textarea id="quoteMessage" name="message" rows="4" placeholder="Mention room dimensions, delivery postcode, or specific timber/fabric finishes..."></textarea>
+                <textarea id="quoteMessage" name="message" rows="4" placeholder="Mention room dimensions (in feet/inches or cm), fabric colour preferences, or project timeline..."></textarea>
               </div>
 
               <button type="submit" class="btn btn--dark btn--lg" style="width: 100%; justify-content: center;">
@@ -137,42 +173,59 @@
             </form>
 
             <div id="quoteSuccessMessage" style="display:none; margin-top:20px; padding:20px; background:#E8F5E9; border-radius:14px; color:#2E7D32;">
-              <strong>Thank you for your inquiry!</strong> Our interior craftsmanship team has received your details and will send a personalized quote and specification sheet to your email within 24 hours.
+              <strong>Thank you for your inquiry!</strong> Our team has received your details and will get back to you shortly with specifications and quote.
             </div>
           </div>
 
           <!-- DIRECT CONTACT & STUDIOS -->
           <div class="contact-info-wrap reveal">
             <div class="contact-card">
-              <span class="eyebrow">Reach Us Directly</span>
-              <h3>Studio Headquarters</h3>
-              <p class="muted">Speak with our senior furniture consultants for private viewings, trade accounts, and custom commissions.</p>
+              <div class="single-studio-badge" style="margin-bottom:14px;">
+                <span class="rating-stars">★★★★★</span>
+                <strong>4.9 Rating</strong>
+                <span class="rating-count">(21 Google Reviews)</span>
+              </div>
+              <span class="eyebrow">Visit Our Showroom</span>
+              <h3>Jay Ambe Sofa House - Dindoli</h3>
+              <p class="muted">Experience sofas, mattresses, curtains, and interior furnishings in person.</p>
               
               <ul class="contact-list">
                 <li>
-                  <strong>Email:</strong>
-                  <a href="mailto:hello@jayambesofa.com">hello@jayambesofa.com</a>
+                  <strong>Address:</strong>
+                  <span>Shop No. 23, Green Residency, near Madhav crest, opposite Dmart, Dindoli, Surat, Gujarat 394210</span>
                 </li>
                 <li>
-                  <strong>Direct Line:</strong>
-                  <a href="tel:+441234567890">+44 1234 567 890</a>
+                  <strong>Showroom Hours:</strong>
+                  <span>Open Everyday: 10:00 AM – 10:00 PM</span>
                 </li>
                 <li>
-                  <strong>Workshop &amp; Factory:</strong>
-                  <span>Jay Ambe Sofa House Craft Studio</span>
+                  <strong>Instagram:</strong>
+                  <a href="https://www.instagram.com/_jay_ambe_sofa_house_" target="_blank" rel="noopener">@_jay_ambe_sofa_house_</a>
                 </li>
                 <li>
-                  <strong>Hours:</strong>
-                  <span>Monday to Saturday: 9:00 AM – 7:00 PM</span>
+                  <strong>Google Directions:</strong>
+                  <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiIjsmnzr2WAxUAAAAAHQAAAAAQBQ..i&sca_esv=efde9a0fd55cd1a4&pvq=Cg0vZy8xMXoxMDVyZ3l4IhMKDWpheSBhbWJlIHNvZmEQAhgD&lqi=Cg1qYXkgYW1iZSBzb2ZhSLz37oKEvoCACFolEAAQARACGAAYARgCIg1qYXkgYW1iZSBzb2ZhKggIAhAAEAEQApIBCnNvZmFfc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3be051c1def991b5:0x7a303e2d1ca98655" target="_blank" rel="noopener">Open in Google Maps</a>
                 </li>
               </ul>
-            </div>
 
-            <div class="contact-card" style="margin-top:24px;">
-              <span class="eyebrow">Delivery &amp; White Glove Service</span>
-              <h3>Worldwide Logistics</h3>
-              <p class="muted">Every order includes room-of-choice placement, uncrating, full assembly, and packaging recycling.</p>
+              <div style="margin-top:20px;">
+                <a class="btn btn--dark" style="width:100%; justify-content:center;" href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiIjsmnzr2WAxUAAAAAHQAAAAAQBQ..i&sca_esv=efde9a0fd55cd1a4&pvq=Cg0vZy8xMXoxMDVyZ3l4IhMKDWpheSBhbWJlIHNvZmEQAhgD&lqi=Cg1qYXkgYW1iZSBzb2ZhSLz37oKEvoCACFolEAAQARACGAAYARgCIg1qYXkgYW1iZSBzb2ZhKggIAhAAEAEQApIBCnNvZmFfc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3be051c1def991b5:0x7a303e2d1ca98655" target="_blank" rel="noopener">
+                  Get Directions to Showroom
+                  <span class="btn__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAP SECTION -->
+      <section class="section" style="padding-top:0;">
+        <div class="container reveal">
+          <div class="single-studio-map" style="height:420px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.189432215626!2d72.8854042!3d21.144858299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be051c1def991b5%3A0x7a303e2d1ca98655!2sJay%20Ambe%20Sofa%20House%20-%20Dindoli!5e0!3m2!1sen!2sin!4v1787723892884!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </div>
         </div>
       </section>
@@ -183,24 +236,24 @@
           <div class="reveal">
             <span class="eyebrow">Frequently Asked Questions</span>
             <h2 class="h2">Good To Know</h2>
-            <p class="muted">Everything regarding shipping times, trade accounts, and our 5-year structural warranty.</p>
+            <p class="muted">Everything regarding orders, customizations, and our 5-year structural warranty.</p>
           </div>
           <div class="faq reveal" id="faq">
             <details class="faq__item" open>
-              <summary>How long does a made-to-order piece take?<span class="faq__plus" aria-hidden="true"></span></summary>
-              <p>In-stock items dispatch within 3–5 working days. Custom upholstered sofas and bespoke timber tables take 2–4 weeks from order confirmation.</p>
+              <summary>How long does custom sofa crafting take?<span class="faq__plus" aria-hidden="true"></span></summary>
+              <p>In-stock models are available for immediate delivery. Made-to-order sofas with custom fabrics and sizing typically take 1–2 weeks from order confirmation.</p>
             </details>
             <details class="faq__item">
-              <summary>Do you offer trade discounts for interior designers and architects?<span class="faq__plus" aria-hidden="true"></span></summary>
-              <p>Yes. We work closely with architects and residential designers. Trade accounts receive tiered volume pricing, expedited swatch shipping, and 3D CAD models.</p>
+              <summary>Can I choose custom fabrics, foams, and dimensions?<span class="faq__plus" aria-hidden="true"></span></summary>
+              <p>Yes. You can select your preferred dimensions (e.g. 3-seater, 5-seater, L-shape), foam density (soft, medium, high resilience), and upholstery textures (bouclé, velvet, leatherette, linen).</p>
             </details>
             <details class="faq__item">
-              <summary>Can I customize fabric with my own material (COM)?<span class="faq__plus" aria-hidden="true"></span></summary>
-              <p>Yes. We accept Customer’s Own Material (COM) across all sofa and chair designs. Our workshop will confirm yardage requirements upon quote request.</p>
+              <summary>Do you provide doorstep delivery and installation in Surat?<span class="faq__plus" aria-hidden="true"></span></summary>
+              <p>Yes. We offer direct doorstep delivery, placement, and installation across Surat and nearby areas.</p>
             </details>
             <details class="faq__item">
               <summary>What is covered under the 5-year warranty?<span class="faq__plus" aria-hidden="true"></span></summary>
-              <p>Five full years on hardwood frames, mortise-tenon joinery, and structural springs; two years on upholstery fabric weaves and moving mechanisms.</p>
+              <p>Five full years on hardwood frames, springs, and joinery structure; plus dedicated service for foam and fabrics.</p>
             </details>
           </div>
         </div>
@@ -214,20 +267,24 @@
       </div>
       <div class="container footer__main">
         <div class="footer__brand-col">
-          <a class="footer__brand-logo" href="./index.html">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer__logo-icon">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Jay Ambe Sofa</span>
+          <a class="footer__brand-logo" href="./index.html" aria-label="Jay Ambe Sofa House Home">
+            <div class="footer__logo-badge">
+              <img src="./img/logo_white.webp" alt="Jay Ambe Sofa House" class="footer__logo-img" />
+            </div>
           </a>
+          <div class="footer__rating-tag">
+            <span class="rating-stars">★★★★★</span>
+            <span>4.9 / 5.0</span>
+            <small>(21 Google Reviews)</small>
+          </div>
           <div class="footer__socials">
-            <a href="https://facebook.com" target="_blank" rel="noopener">Fb</a>
+            <a href="https://wa.me/919823000000?text=Hello%20Jay%20Ambe%20Sofa%20House,%20I%20would%20like%20to%20inquire%20about%20your%20sofas%20and%20furnishings." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
             <span class="sep">/</span>
-            <a href="https://behance.net" target="_blank" rel="noopener">Be</a>
+            <a href="https://www.instagram.com/_jay_ambe_sofa_house_" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
             <span class="sep">/</span>
-            <a href="https://twitter.com" target="_blank" rel="noopener">X</a>
+            <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiIjsmnzr2WAxUAAAAAHQAAAAAQBQ..i&sca_esv=efde9a0fd55cd1a4&pvq=Cg0vZy8xMXoxMDVyZ3l4IhMKDWpheSBhbWJlIHNvZmEQAhgD&lqi=Cg1qYXkgYW1iZSBzb2ZhSLz37oKEvoCACFolEAAQARACGAAYARgCIg1qYXkgYW1iZSBzb2ZhKggIAhAAEAEQApIBCnNvZmFfc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3be051c1def991b5:0x7a303e2d1ca98655" target="_blank" rel="noopener" aria-label="Google Maps Directions">Google Maps</a>
             <span class="sep">/</span>
-            <a href="https://linkedin.com" target="_blank" rel="noopener">Ln</a>
+            <a href="./contact.html" aria-label="Direct Inquiry">Contact</a>
           </div>
         </div>
 
@@ -241,25 +298,38 @@
           <div class="footer__nav-col">
             <a href="./collection.html?category=sofas">SOFAS</a>
             <a href="./collection.html?category=tables">DINING</a>
-            <a href="./contact.html">CONTACT</a>
-            <a href="./about.html">SHOWROOMS</a>
+            <a href="./contact.html">GET QUOTE</a>
+            <a href="./about.html#showroom">SHOWROOM</a>
           </div>
         </div>
 
         <div class="footer__contact-col">
-          <a class="footer__phone" href="tel:+441234567890">+44 (123) 456-7890</a>
-          <a class="footer__email-pill" href="mailto:hello@jayambesofa.com">[ hello@jayambesofa.com ]</a>
+          <a class="footer__phone" href="https://www.instagram.com/_jay_ambe_sofa_house_" target="_blank" rel="noopener">@_jay_ambe_sofa_house_</a>
+          <a class="footer__email-pill" href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiIjsmnzr2WAxUAAAAAHQAAAAAQBQ..i&sca_esv=efde9a0fd55cd1a4&pvq=Cg0vZy8xMXoxMDVyZ3l4IhMKDWpheSBhbWJlIHNvZmEQAhgD&lqi=Cg1qYXkgYW1iZSBzb2ZhSLz37oKEvoCACFolEAAQARACGAAYARgCIg1qYXkgYW1iZSBzb2ZhKggIAhAAEAEQApIBCnNvZmFfc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3be051c1def991b5:0x7a303e2d1ca98655" target="_blank" rel="noopener">[ Open in Google Maps ]</a>
           <p class="footer__address">
-            Hanzelaan 351, Suite 400,<br />
-            Jay Ambe Sofa House Studio
+            Shop No. 23, Green Residency,<br />
+            Near Madhav Crest, Opposite Dmart,<br />
+            Dindoli, Surat, Gujarat 394210<br />
+            <span style="color: #fbd38d; font-size:12px; display:inline-block; margin-top:4px;">Open Everyday · Closes 10:00 PM</span>
           </p>
         </div>
       </div>
 
       <div class="container footer__bottom-center">
-        <span>© <span id="year"></span> <strong>JAY AMBE SOFA</strong> All Rights Reserved</span>
+        <span>© <span id="year"></span> <strong>JAY AMBE SOFA HOUSE</strong> • Dindoli, Surat • All Rights Reserved</span>
       </div>
     </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (BROWN THEME) -->
+    <a href="https://wa.me/919823000000?text=Hello%20Jay%20Ambe%20Sofa%20House,%20I%20would%20like%20to%20inquire%20about%20your%20sofas%20and%20furniture." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+      <span class="whatsapp-float__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.2 0-.43.08-.66.33-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.17 1.76 2.68 4.25 3.76 2.08.9 2.51.72 2.96.68.45-.04 1.45-.59 1.66-1.16.2-.57.2-1.06.14-1.16-.06-.1-.23-.17-.48-.29s-1.45-.72-1.68-.8c-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.96-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48Z"/>
+        </svg>
+      </span>
+      <span class="whatsapp-float__text">WhatsApp</span>
+    </a>
 
     <script src="./main.js"></script>
   </body>

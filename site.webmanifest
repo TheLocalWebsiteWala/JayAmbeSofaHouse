@@ -1,0 +1,22 @@
+{
+  "name": "Jay Ambe Sofa House - Surat",
+  "short_name": "Jay Ambe Sofa",
+  "description": "Premium Handcrafted Sofas, Dining Tables & Home Furnishings in Dindoli, Surat, Gujarat",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f4efe8",
+  "theme_color": "#171310",
+  "icons": [
+    {
+      "src": "./img/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

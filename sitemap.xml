@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://jayambesofa.com/index.html</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jayambesofa.com/img/image.webp</image:loc>
+      <image:title>Jay Ambe Sofa House Showroom &amp; Modern Living Room</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jayambesofa.com/collection.html</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jayambesofa.com/img/sofa-1.webp</image:loc>
+      <image:title>Handcrafted Sofas and Furniture Catalogue</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jayambesofa.com/about.html</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jayambesofa.com/img/about.webp</image:loc>
+      <image:title>Jay Ambe Sofa House Workshop &amp; Joinery Philosophy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://jayambesofa.com/contact.html</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+</urlset>

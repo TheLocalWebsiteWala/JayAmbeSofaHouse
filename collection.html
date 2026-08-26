@@ -3,24 +3,79 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Furniture Collection — Jay Ambe Sofa Modern Interiors Studio</title>
+    <title>Furniture Collection &amp; Catalogue — Jay Ambe Sofa House | Surat, Gujarat</title>
     <meta
       name="description"
-      content="Browse Jay Ambe Sofa's complete catalog of handcrafted modern sofas, fluted sideboards, sculptural organic chairs, solid oak dining tables and rattan swings."
+      content="Browse Jay Ambe Sofa House's complete catalogue of handcrafted sofas, fluted sideboards, organic lounge chairs, solid wood dining tables and rattan swings in Surat."
     />
+    <link rel="canonical" href="https://jayambesofa.com/collection.html" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jayambesofa.com/collection.html" />
+    <meta property="og:title" content="Furniture Collection &amp; Catalogue — Jay Ambe Sofa House | Surat, Gujarat" />
+    <meta property="og:description" content="Explore custom handcrafted sofas, wooden dining sets, armchairs, and luxury swings in Surat, Gujarat." />
+    <meta property="og:image" content="https://jayambesofa.com/img/sofa-1.webp" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Furniture Collection &amp; Catalogue — Jay Ambe Sofa House | Surat, Gujarat" />
+    <meta name="twitter:description" content="Explore custom handcrafted sofas, wooden dining sets, armchairs, and luxury swings in Surat, Gujarat." />
+    <meta name="twitter:image" content="https://jayambesofa.com/img/sofa-1.webp" />
+
+    <link rel="manifest" href="./site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./img/favicon.png" />
+    <link rel="apple-touch-icon" href="./img/favicon.png" />
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- JSON-LD Breadcrumb & CollectionPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://jayambesofa.com/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Collection",
+              "item": "https://jayambesofa.com/collection.html"
+            }
+          ]
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://jayambesofa.com/collection.html#catalogue",
+          "url": "https://jayambesofa.com/collection.html",
+          "name": "Handcrafted Furniture Catalogue — Jay Ambe Sofa House",
+          "description": "Custom made living room sofas, sideboards, dining tables, lounge chairs, and rattan swing chairs in Surat, Gujarat."
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="page-collection">
     <!-- NAV -->
     <header class="nav" id="nav">
       <div class="nav__inner">
-        <a class="nav__brand" href="./index.html">Jay Ambe Sofa</a>
+        <a class="nav__brand" href="./index.html" aria-label="Jay Ambe Sofa House Home">
+          <img src="./img/logo.webp" alt="Jay Ambe Sofa House" class="nav__logo" />
+        </a>
         <nav class="nav__links" id="navLinks">
           <a href="./index.html">Home</a>
           <a href="./collection.html" class="is-active">Collection</a>
@@ -50,10 +105,10 @@
             <span class="breadcrumb-sep">/</span>
             <span>Collection</span>
           </div>
-          <span class="eyebrow">Catalog &amp; Shop</span>
+          <span class="eyebrow">Catalogue &amp; Showroom</span>
           <h1 class="h1 page-hero__title">Our Complete Collection</h1>
           <p class="lead page-hero__lead">
-            Explore handcrafted pieces made for everyday comfort, enduring quality, and timeless architectural character.
+            Explore handcrafted pieces made for everyday comfort, enduring quality, and timeless architectural character in Surat, Gujarat.
           </p>
         </div>
       </section>
@@ -77,7 +132,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
                   <path d="M21 21l-4.35-4.35M19 11a8 8 0 11-16 0 8 8 0 0116 0z" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <input type="text" id="catalogSearchInput" placeholder="Search by name, wood, fabric..." aria-label="Search catalog" />
+                <input type="text" id="catalogSearchInput" placeholder="Search by name, wood, fabric, colour..." aria-label="Search catalogue" />
               </div>
               <div class="catalog-sort">
                 <label for="catalogSortSelect">Sort:</label>
@@ -98,7 +153,7 @@
 
           <!-- PRODUCT GRID -->
           <div class="catalog-grid" id="catalogProductsGrid">
-            <!-- Rendered by JavaScript -->
+            <!-- Rendered by main.js from products.js -->
           </div>
         </div>
       </section>
@@ -110,7 +165,7 @@
             <span class="eyebrow">Bespoke Manufacturing</span>
             <h2 class="h2">Need Custom Dimensions or Specific Fabrics?</h2>
             <p class="muted">
-              Every piece in our catalog can be customized with 30+ premium upholstery textiles, 4 wood finishes, and tailored dimensions for your architectural space.
+              Every piece in our catalogue can be customised with premium upholstery textiles, finishes, and tailored dimensions for your flat, villa, or living room in Surat.
             </p>
             <a href="./contact.html" class="btn btn--dark">
               Request Custom Quote
@@ -124,16 +179,16 @@
     </main>
 
     <!-- QUICK VIEW MODAL -->
-    <div class="quickview-modal" id="quickViewModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="quickview-modal" id="quickViewModal" aria-hidden="true" role="dialog">
       <div class="quickview-modal__backdrop" id="quickViewBackdrop"></div>
       <div class="quickview-modal__dialog">
-        <button class="quickview-modal__close" id="quickViewClose" aria-label="Close product view">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 6 6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        <button class="quickview-modal__close" id="quickViewClose" aria-label="Close product preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
-        <div class="quickview-modal__content" id="quickViewContent">
-          <!-- Rendered dynamically -->
+        <div id="quickViewContent">
+          <!-- Populated by JS -->
         </div>
       </div>
     </div>
@@ -145,20 +200,24 @@
       </div>
       <div class="container footer__main">
         <div class="footer__brand-col">
-          <a class="footer__brand-logo" href="./index.html">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer__logo-icon">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Jay Ambe Sofa</span>
+          <a class="footer__brand-logo" href="./index.html" aria-label="Jay Ambe Sofa House Home">
+            <div class="footer__logo-badge">
+              <img src="./img/logo_white.webp" alt="Jay Ambe Sofa House" class="footer__logo-img" />
+            </div>
           </a>
+          <div class="footer__rating-tag">
+            <span class="rating-stars">★★★★★</span>
+            <span>4.9 / 5.0</span>
+            <small>(21 Google Reviews)</small>
+          </div>
           <div class="footer__socials">
-            <a href="https://facebook.com" target="_blank" rel="noopener">Fb</a>
+            <a href="https://wa.me/919823000000?text=Hello%20Jay%20Ambe%20Sofa%20House,%20I%20would%20like%20to%20inquire%20about%20your%20sofas%20and%20furnishings." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
             <span class="sep">/</span>
-            <a href="https://behance.net" target="_blank" rel="noopener">Be</a>
+            <a href="https://www.instagram.com/_jay_ambe_sofa_house_" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
             <span class="sep">/</span>
-            <a href="https://twitter.com" target="_blank" rel="noopener">X</a>
+            <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiIjsmnzr2WAxUAAAAAHQAAAAAQBQ..i&sca_esv=efde9a0fd55cd1a4&pvq=Cg0vZy8xMXoxMDVyZ3l4IhMKDWpheSBhbWJlIHNvZmEQAhgD&lqi=Cg1qYXkgYW1iZSBzb2ZhSLz37oKEvoCACFolEAAQARACGAAYARgCIg1qYXkgYW1iZSBzb2ZhKggIAhAAEAEQApIBCnNvZmFfc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3be051c1def991b5:0x7a303e2d1ca98655" target="_blank" rel="noopener" aria-label="Google Maps Directions">Google Maps</a>
             <span class="sep">/</span>
-            <a href="https://linkedin.com" target="_blank" rel="noopener">Ln</a>
+            <a href="./contact.html" aria-label="Direct Inquiry">Contact</a>
           </div>
         </div>
 
@@ -172,25 +231,38 @@
           <div class="footer__nav-col">
             <a href="./collection.html?category=sofas">SOFAS</a>
             <a href="./collection.html?category=tables">DINING</a>
-            <a href="./contact.html">CONTACT</a>
-            <a href="./about.html">SHOWROOMS</a>
+            <a href="./contact.html">GET QUOTE</a>
+            <a href="./about.html#showroom">SHOWROOM</a>
           </div>
         </div>
 
         <div class="footer__contact-col">
-          <a class="footer__phone" href="tel:+441234567890">+44 (123) 456-7890</a>
-          <a class="footer__email-pill" href="mailto:hello@jayambesofa.com">[ hello@jayambesofa.com ]</a>
+          <a class="footer__phone" href="https://www.instagram.com/_jay_ambe_sofa_house_" target="_blank" rel="noopener">@_jay_ambe_sofa_house_</a>
+          <a class="footer__email-pill" href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiIjsmnzr2WAxUAAAAAHQAAAAAQBQ..i&sca_esv=efde9a0fd55cd1a4&pvq=Cg0vZy8xMXoxMDVyZ3l4IhMKDWpheSBhbWJlIHNvZmEQAhgD&lqi=Cg1qYXkgYW1iZSBzb2ZhSLz37oKEvoCACFolEAAQARACGAAYARgCIg1qYXkgYW1iZSBzb2ZhKggIAhAAEAEQApIBCnNvZmFfc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3be051c1def991b5:0x7a303e2d1ca98655" target="_blank" rel="noopener">[ Open in Google Maps ]</a>
           <p class="footer__address">
-            Hanzelaan 351, Suite 400,<br />
-            Jay Ambe Sofa House Studio
+            Shop No. 23, Green Residency,<br />
+            Near Madhav Crest, Opposite Dmart,<br />
+            Dindoli, Surat, Gujarat 394210<br />
+            <span style="color: #fbd38d; font-size:12px; display:inline-block; margin-top:4px;">Open Everyday · Closes 10:00 PM</span>
           </p>
         </div>
       </div>
 
       <div class="container footer__bottom-center">
-        <span>© <span id="year"></span> <strong>JAY AMBE SOFA</strong> All Rights Reserved</span>
+        <span>© <span id="year"></span> <strong>JAY AMBE SOFA HOUSE</strong> • Dindoli, Surat • All Rights Reserved</span>
       </div>
     </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (BROWN THEME) -->
+    <a href="https://wa.me/919823000000?text=Hello%20Jay%20Ambe%20Sofa%20House,%20I%20would%20like%20to%20inquire%20about%20your%20sofas%20and%20furniture." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+      <span class="whatsapp-float__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.2 0-.43.08-.66.33-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.17 1.76 2.68 4.25 3.76 2.08.9 2.51.72 2.96.68.45-.04 1.45-.59 1.66-1.16.2-.57.2-1.06.14-1.16-.06-.1-.23-.17-.48-.29s-1.45-.72-1.68-.8c-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.96-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48Z"/>
+        </svg>
+      </span>
+      <span class="whatsapp-float__text">WhatsApp</span>
+    </a>
 
     <script src="./products.js"></script>
     <script src="./main.js"></script>
