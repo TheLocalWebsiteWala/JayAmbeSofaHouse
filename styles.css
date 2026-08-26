@@ -1837,16 +1837,19 @@ button, input, select, textarea {
   margin-bottom: clamp(24px, 5vw, 60px);
   user-select: none;
   pointer-events: none;
+  padding: 0 8px;
+  box-sizing: border-box;
 }
 
 .footer__watermark {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: clamp(38px, 14vw, 220px);
-  line-height: 0.88;
-  letter-spacing: 0.04em;
+  font-size: clamp(20px, 7.8vw, 190px);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
+  max-width: 100%;
   color: #242424;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.05) 100%);
   -webkit-background-clip: text;
@@ -2352,6 +2355,11 @@ button, input, select, textarea {
     width: 100%;
     justify-content: flex-start;
   }
+
+  .footer__watermark {
+    font-size: clamp(18px, 7.4vw, 42px);
+    letter-spacing: 0.01em;
+  }
 }
 
 /* --- ULTRA COMPACT MOBILE (375px and below) --- */
@@ -2364,6 +2372,11 @@ button, input, select, textarea {
   .footer__nav-cols {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .footer__watermark {
+    font-size: clamp(16px, 7.2vw, 28px);
+    letter-spacing: 0.01em;
   }
 
   .btn {
