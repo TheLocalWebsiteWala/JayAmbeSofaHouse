@@ -529,7 +529,31 @@
 
   window.handleQuoteSubmit = function (form) {
     var success = document.getElementById("quoteSuccessMessage");
+    var name = (form.querySelector("#quoteName") || {}).value || "";
+    var contact = (form.querySelector("#quoteEmail") || {}).value || "";
+    var product = (form.querySelector("#quoteProduct") || {}).value || "";
+    var room = (form.querySelector("#quoteRoom") || {}).value || "";
+    var message = (form.querySelector("#quoteMessage") || {}).value || "";
+
+    var text = "Hello Jay Ambe Sofa House,\n\nI would like to request a quote:\n" +
+      "• Name: " + name + "\n" +
+      "• Contact: " + contact + "\n" +
+      "• Requirement: " + product + "\n" +
+      "• Room/Type: " + room + "\n" +
+      (message ? "• Details: " + message + "\n" : "");
+
+    var waUrl = "https://wa.me/919823000000?text=" + encodeURIComponent(text);
+
     if (success) {
+      success.innerHTML =
+        '<div style="display:flex; flex-direction:column; gap:12px;">' +
+          '<div><strong>Thank you, ' + (name || "valued customer") + '!</strong> Your quote request has been prepared.</div>' +
+          '<p style="font-size:14px; margin:0; color:#1b5e20;">For instant response and direct consultation with our master craftsmen, you can also send this inquiry directly on WhatsApp:</p>' +
+          '<div><a href="' + waUrl + '" target="_blank" rel="noopener" class="btn btn--dark" style="display:inline-flex; align-items:center; gap:8px; margin-top:4px;">' +
+            '<span>Send Directly via WhatsApp</span>' +
+            '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.2 0-.43.08-.66.33-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.17 1.76 2.68 4.25 3.76 2.08.9 2.51.72 2.96.68.45-.04 1.45-.59 1.66-1.16.2-.57.2-1.06.14-1.16-.06-.1-.23-.17-.48-.29s-1.45-.72-1.68-.8c-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.96-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48Z"/></svg>' +
+          '</a></div>' +
+        '</div>';
       success.style.display = "block";
       form.style.display = "none";
       success.scrollIntoView({ behavior: "smooth" });
